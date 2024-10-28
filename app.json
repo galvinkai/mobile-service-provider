@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "expo-template-default",
+    "name": "Mobile Service Provider",
+    "slug": "mobile-service-provider",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -13,13 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.galvinkai.mobileserviceprovider"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.galvinkai.mobileserviceprovider"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +33,18 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ca079d77-7e8c-4f09-a1b5-13f4d7423383"
+      }
+    },
+    "owner": "galvinkai",
+    "updates": {
+      "url": "https://u.expo.dev/ca079d77-7e8c-4f09-a1b5-13f4d7423383"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
