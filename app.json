@@ -1,50 +1,48 @@
 {
-  "expo": {
-    "name": "Mobile Service Provider",
-    "slug": "mobile-service-provider",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.galvinkai.mobileserviceprovider"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.galvinkai.mobileserviceprovider"
-    },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router"
-    ],
-    "experiments": {
-      "typedRoutes": true
-    },
-    "extra": {
-      "eas": {
-        "projectId": "ca079d77-7e8c-4f09-a1b5-13f4d7423383"
-      }
-    },
-    "owner": "galvinkai",
-    "updates": {
-      "url": "https://u.expo.dev/ca079d77-7e8c-4f09-a1b5-13f4d7423383"
-    },
-    "runtimeVersion": {
-      "policy": "appVersion"
-    }
-  }
+	"expo": {
+		"name": "Mobile Service Provider",
+		"slug": "mobile-service-provider",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/images/logo.png",
+		"scheme": "tnmobile",
+		"userInterfaceStyle": "automatic",
+		"splash": {
+			"image": "./assets/images/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#295791"
+		},
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.galvinkai.mobileserviceprovider"
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/images/logo.jpg",
+				"backgroundColor": "#295791"
+			},
+			"package": "com.galvinkai.mobileserviceprovider"
+		},
+		"web": {
+			"bundler": "metro",
+			"output": "static",
+			"favicon": "./assets/images/favicon.png"
+		},
+		"plugins": ["expo-router"],
+		"experiments": {
+			"typedRoutes": true
+		},
+		"extra": {
+			"eas": {
+				"projectId": "ca079d77-7e8c-4f09-a1b5-13f4d7423383"
+			}
+		},
+		"owner": "galvinkai",
+		"updates": {
+			"url": "https://u.expo.dev/ca079d77-7e8c-4f09-a1b5-13f4d7423383"
+		},
+		"runtimeVersion": {
+			"policy": "appVersion"
+		}
+	}
 }
