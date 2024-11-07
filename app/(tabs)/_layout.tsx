@@ -1,15 +1,28 @@
-import TabBarIcon from "../../components/navigation/TabBarIcon";
+import TabBarIcon from "@/components/navigation/TabBarIcon";
 import { Tabs } from "expo-router";
 import React from "react";
 
 const TabsLayout = () => {
 	return (
 		<>
-			<Tabs>
+			<Tabs
+				screenOptions={{
+					tabBarInactiveTintColor: "#295791",
+					tabBarActiveTintColor: "#E87400",
+					tabBarStyle: {
+						borderTopColor: "#295791",
+						borderTopWidth: 1.5,
+					},
+					headerShown: true,
+					headerStyle: {
+						backgroundColor: "#295791",
+					},
+					headerTintColor: "#fff",
+				}}>
 				<Tabs.Screen
 					name="home"
 					options={{
-						title: "Home",
+						headerTitle: "Home",
 						headerShown: false,
 						tabBarIcon: ({ color, focused }) => (
 							<TabBarIcon
@@ -22,8 +35,8 @@ const TabsLayout = () => {
 				<Tabs.Screen
 					name="shop"
 					options={{
-						title: "Home",
-						headerShown: false,
+						title: "Shop",
+
 						tabBarIcon: ({ color, focused }) => (
 							<TabBarIcon
 								icon={focused ? "shopping" : "shopping-outline"}
@@ -36,15 +49,17 @@ const TabsLayout = () => {
 					name="account"
 					options={{
 						title: "Account",
-						headerShown: false,
-						tabBarIcon: () => <TabBarIcon icon="account" />,
+
+						tabBarIcon: ({ focused }) => (
+							<TabBarIcon icon={focused ? "account-active" : "account"} />
+						),
 					}}
 				/>
 				<Tabs.Screen
 					name="network"
 					options={{
 						title: "Network",
-						headerShown: false,
+
 						tabBarIcon: ({ color }) => (
 							<TabBarIcon icon="network" color={color} />
 						),
@@ -54,7 +69,7 @@ const TabsLayout = () => {
 					name="settings"
 					options={{
 						title: "Network",
-						headerShown: false,
+
 						tabBarIcon: ({ color, focused }) => (
 							<TabBarIcon
 								icon={focused ? "cog" : "cog-outline"}
