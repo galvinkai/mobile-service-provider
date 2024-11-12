@@ -1,10 +1,9 @@
-import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import React from "react";
 import { Text, View } from "react-native";
 import { CircularProgress } from "react-native-circular-progress";
 
 interface StatusProps {
-    icon: React.ReactNode;
+    icon: any;
     total: number;
     current: number;
     label: string;
@@ -29,13 +28,7 @@ const Status: React.FC<StatusProps> = ({
                 tintTransparency={true}
                 rotation={0}
             >
-                {() => (
-                    <MaterialIcons
-                        name="local-phone"
-                        size={30}
-                        color="#E87400"
-                    />
-                )}
+                {icon}
             </CircularProgress>
             <Text className="font-raleway-semibold text-sm">{label}</Text>
 

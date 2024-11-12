@@ -11,25 +11,20 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children, bgColor, homeBanner }) => {
     return (
         <SafeAreaView
-            className="w-full"
-            style={{
-                backgroundColor: bgColor
-                    ? bgColor
-                    : homeBanner
-                      ? "#295791"
-                      : "white",
-            }}
+            className="h-full w-full"
+            edges={["left", "right"]}
+            style={{ backgroundColor: "white" }}
         >
-            <View>{homeBanner}</View>
             <ScrollView
-                className="w-full px-4"
+                className="w-full"
                 style={{
                     backgroundColor: bgColor ? "transparent" : "white",
                     height: "100%",
                 }}
                 contentContainerStyle={{ height: "100%" }}
             >
-                {children}
+                <View className="flex-1">{homeBanner && homeBanner}</View>
+                <View className="px-4">{children}</View>
             </ScrollView>
         </SafeAreaView>
     );

@@ -1,4 +1,3 @@
-import Logo from "@/assets/icons/account-active.svg";
 import Button from "@/components/Button";
 import Layout from "@/components/Layout";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
@@ -11,7 +10,7 @@ const index = () => {
     return (
         <Layout bgColor="rgba(233,131,32,0.10)">
             <View className="h-full w-full items-center justify-center gap-y-20">
-                <Logo width={150} height={150} />
+                {/* <Logo width={150} height={150} /> */}
 
                 <View className="w-full gap-y-6">
                     <View>

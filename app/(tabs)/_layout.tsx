@@ -23,8 +23,18 @@ const TabsLayout = () => {
                 <Tabs.Screen
                     name="home"
                     options={{
-                        headerTitle: "Home",
-                        headerShown: false,
+                        headerTitle: "",
+                        title: "Home",
+                        headerStyle: {
+                            backgroundColor: "#295791",
+                            borderBottomWidth: 0, // Remove bottom border
+                            borderBottomColor: "transparent", // Ensure no color is applied
+                            elevation: 0, // Remove shadow on Android
+                            shadowOpacity: 0, // Remove shadow on iOS
+                            height: 50,
+                        },
+                        headerTintColor: "#295791",
+
                         tabBarIcon: ({ color, focused }) => (
                             <TabBarIcon
                                 icon={
