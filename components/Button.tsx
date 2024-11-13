@@ -1,20 +1,35 @@
+import { ButtonProps } from "@/types/type";
 import React from "react";
 import { Pressable, Text } from "react-native";
 
-interface ButtonProps {
-    text: string;
-    icon?: any;
-    color: string;
-}
+const buttonColor = (colour: ButtonProps["colour"]) => {
+    switch (colour) {
+        case "orange":
+            return "bg-orange";
+        case "blue":
+            return "bg-blue";
+    }
+};
 
-const Button: React.FC<ButtonProps> = ({ text, icon, color }) => {
+const getTextSize = (size: ButtonProps["textSize"]) => {
+    switch (size) {
+        case "base":
+            return "text-base";
+        case "big":
+            return "text-xl";
+    }
+};
+
+const Button: React.FC<ButtonProps> = ({ text, icon, colour, textSize }) => {
     return (
         <Pressable
-            className={`bg-${color} flex w-full flex-row items-center justify-center gap-8 rounded-full py-4`}
+            className={`flex w-full flex-row items-center justify-center gap-3 rounded-full py-4 ${buttonColor(colour)}`}
         >
             {icon}
 
-            <Text className="font-raleway-semibold text-xl text-white">
+            <Text
+                className={`font-raleway-semibold text-xl text-white ${getTextSize(textSize)}`}
+            >
                 {text}
             </Text>
         </Pressable>

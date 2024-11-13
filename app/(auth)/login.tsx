@@ -1,12 +1,14 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Login = () => {
-	return (
-		<View>
-			<Text>Login</Text>
-		</View>
-	);
+    // verifyInstallation();
+    return (
+        <SafeAreaView className="flex h-full w-full items-center justify-center bg-white px-4">
+            <Text>Login</Text>
+        </SafeAreaView>
+    );
 };
 
 export default Login;

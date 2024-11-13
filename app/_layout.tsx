@@ -1,11 +1,13 @@
 import { useFonts } from "expo-font";
-import { SplashScreen, Stack } from "expo-router";
-import React, { useEffect } from "react";
+import { Stack } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
+import { useEffect } from "react";
 import "../global.css";
 
+// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
-const RootLayout = () => {
+export default function RootLayout() {
     const [fontsLoaded, error] = useFonts({
         // Raleway
         Raleway: require("../assets/fonts/Raleway/Raleway-Regular.ttf"),
@@ -61,12 +63,12 @@ const RootLayout = () => {
     if (!fontsLoaded && !error) {
         return null;
     }
-
     return (
         <Stack screenOptions={{ headerShown: false }}>
             <Stack.Screen name="index" />
+            <Stack.Screen name="(auth)" />
+            <Stack.Screen name="(root)" />
+            <Stack.Screen name="+not-found" options={{ headerShown: true }} />
         </Stack>
     );
-};
-
-export default RootLayout;
+}
