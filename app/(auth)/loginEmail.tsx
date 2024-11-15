@@ -1,12 +1,12 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const Shop = () => {
+const LoginEmail = () => {
     return (
         <View>
-            <Text>Shop</Text>
+            <Text>LoginEmail</Text>
         </View>
     );
 };
 
-export default Shop;
+export default LoginEmail;
