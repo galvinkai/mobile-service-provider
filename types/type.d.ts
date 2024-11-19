@@ -28,9 +28,27 @@ export interface InputFieldProps extends TextInputProps {
 }
 
 export interface StatusProps {
-    icon: any;
+    iconType: any;
+    iconName: any;
     total: number;
     current: number;
     label: string;
     unit: string;
+}
+
+export interface QuickActionsProps {
+    children: any;
+}
+
+export interface IconProps {
+    iconType: any;
+    iconName: any;
+    text: string;
+    link: RelativePathString;
+}
+
+export interface RecentPurchaseProps {
+    text: string;
+    price: float;
+    date: string;
 }

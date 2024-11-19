@@ -1,3 +1,4 @@
+import Logo from "@/assets/icons/account-active.svg";
 import Button from "@/components/Button";
 import LayoutAuth from "@/components/LayoutAuth";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
@@ -9,6 +10,10 @@ import { Platform, Text, View } from "react-native";
 const Welcome = () => {
     return (
         <LayoutAuth>
+            <View className="mb-8">
+                <Logo width={200} height={200} />
+            </View>
+
             <Button
                 text="Sign in with Mobile Number"
                 colour="orange"
@@ -60,12 +65,14 @@ const Welcome = () => {
             />
             <Button
                 text="Sign in with Apple"
-                colour="blue"
+                textColour="black"
+                border="gray-300"
+                colour="white"
                 icon={
                     <MaterialCommunityIcons
                         name="apple"
                         size={24}
-                        color="white"
+                        color="black"
                     />
                 }
             />

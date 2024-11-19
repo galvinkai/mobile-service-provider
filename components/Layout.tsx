@@ -11,14 +11,13 @@ const Layout = ({ children, homeBanner, bgColor }: LayoutProps) => {
             style={{ backgroundColor: "white" }}
         >
             <ScrollView
-                className="w-full"
+                className="w-full flex-1"
                 style={{
                     backgroundColor: bgColor ? "transparent" : "white",
                 }}
-                contentContainerStyle={{ height: "100%" }}
             >
                 <View>{homeBanner && homeBanner}</View>
-                <View className="gap-y-4 px-6">{children}</View>
+                <View className="gap-y-8 px-6 py-6">{children}</View>
             </ScrollView>
         </SafeAreaView>
     );

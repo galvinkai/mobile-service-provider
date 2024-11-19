@@ -19,7 +19,7 @@ const HomeBanner = () => {
 
     const greeting = getTimeOfDay();
     return (
-        <View className="gap-y-8 border-t-0 bg-blue px-4 py-6">
+        <View className="gap-y-8 border-t-0 bg-blue px-4 pb-8 pt-4">
             <View className="flex flex-row items-start justify-between">
                 <View className="flex flex-row items-center gap-x-1">
                     <Ionicons name="person-circle" size={60} color="white" />
@@ -58,21 +58,24 @@ const HomeBanner = () => {
 
             <View className="flex w-full flex-row items-center">
                 <Status
-                    icon="local-phone"
+                    iconType="Material Icon"
+                    iconName="local-phone"
                     label="Minutes"
                     current={350}
                     total={500}
                     unit="Mins"
                 />
                 <Status
-                    icon="local-phone"
+                    iconType="FontAwesome5"
+                    iconName="globe"
                     label="Data"
                     current={2}
                     total={5}
                     unit="GB"
                 />
                 <Status
-                    icon="local-phone"
+                    iconType="Material Icon"
+                    iconName="message"
                     label="Messages"
                     current={800}
                     total={1155}

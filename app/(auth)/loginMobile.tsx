@@ -8,7 +8,7 @@ const LoginMobile = () => {
         <LayoutAuth>
             <InputField
                 label="Mobile Number"
-                placeholder="Enter your mobile number"
+                placeholder="e.g 085123456"
                 textContentType="telephoneNumber"
                 keyboardType="phone-pad"
             />

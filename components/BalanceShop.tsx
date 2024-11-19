@@ -1,0 +1,15 @@
+import React from "react";
+import { Text, View } from "react-native";
+
+const BalanceShop = () => {
+    return (
+        <View className="mt-2 flex flex-row items-end justify-between rounded-md bg-blue p-4">
+            <Text className="font-raleway-bold text-3xl text-white">
+                Your Balance
+            </Text>
+            <Text className="font-rem text-xl text-white">N$60.00</Text>
+        </View>
+    );
+};
+
+export default BalanceShop;

@@ -7,7 +7,7 @@ import { Pressable, Text, View } from "react-native";
 const LoginOTP = () => {
     return (
         <LayoutAuth>
-            <InputField label="OTP" placeholder="Enter OTP" />
+            <InputField label="OTP" placeholder="e.g 12345" />
             <Button text="Login" colour="blue" link="/(root)/(tabs)/home" />
 
             <View className="flex w-full flex-row items-center justify-center">
