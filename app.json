@@ -4,12 +4,12 @@
         "slug": "telecom",
         "version": "1.0.0",
         "orientation": "portrait",
-        "icon": "./assets/images/logo.png",
+        "icon": "./assets/images/logo-3x.png",
         "scheme": "telecom",
         "userInterfaceStyle": "automatic",
         "newArchEnabled": true,
         "splash": {
-            "image": "./assets/images/splash.png",
+            "image": "./assets/images/logo-3x.png",
             "resizeMode": "contain",
             "backgroundColor": "#295791"
         },
@@ -18,14 +18,14 @@
         },
         "android": {
             "adaptiveIcon": {
-                "foregroundImage": "./assets/images/adaptive-icon.png",
-                "backgroundColor": "#ffffff"
+                "foregroundImage": "./assets/images/logo-3x.png",
+                "backgroundColor": "#295791"
             }
         },
         "web": {
             "bundler": "metro",
             "output": "static",
-            "favicon": "./assets/images/favicon.png"
+            "favicon": "./assets/images/logo-3x.png"
         },
         "plugins": [
             "expo-router",
@@ -33,7 +33,7 @@
                 "expo-splash-screen",
                 {
                     "image": "./assets/images/splash.png",
-                    "imageWidth": 200,
+                    "imageWidth": 5000,
                     "resizeMode": "contain",
                     "backgroundColor": "#295791"
                 }

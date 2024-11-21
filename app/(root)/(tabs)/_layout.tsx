@@ -11,10 +11,26 @@ const Layout = () => {
                 tabBarStyle: {
                     borderTopColor: "#295791",
                     borderTopWidth: 1.5,
+                    height: 95,
+                    paddingTop: 5,
+                },
+                tabBarIconStyle: {
+                    marginBottom: 4,
+                },
+                tabBarLabelStyle: {
+                    fontFamily: "Raleway",
+                    fontWeight: 600,
+                    fontSize: 12,
                 },
                 headerShown: true,
                 headerStyle: {
                     backgroundColor: "#295791",
+                    height: 85,
+                },
+                headerTitleStyle: {
+                    fontFamily: "Raleway",
+                    fontWeight: 500,
+                    fontSize: 16,
                 },
                 headerTintColor: "#fff",
             }}
@@ -76,7 +92,6 @@ const Layout = () => {
                 name="network"
                 options={{
                     title: "Network",
-
                     tabBarIcon: ({ color }) => (
                         <TabIcon icon="network" color={color} />
                     ),
@@ -85,8 +100,7 @@ const Layout = () => {
             <Tabs.Screen
                 name="settings"
                 options={{
-                    title: "Network",
-
+                    title: "Settings",
                     tabBarIcon: ({ color, focused }) => (
                         <TabIcon
                             icon={focused ? "cog" : "cog-outline"}

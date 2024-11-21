@@ -1,3 +1,4 @@
+import SendData from "@/assets/icons/send-data.svg";
 import { IconProps } from "@/types/type";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
@@ -37,6 +38,8 @@ const getIcon = (
                     color={iconColor}
                 />
             );
+        case "Custom Icon Data":
+            return <SendData width={iconSize} height={iconSize} />;
     }
 };
 

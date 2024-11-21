@@ -19,6 +19,7 @@ export interface TabIconProps {
 export interface LayoutProps {
     children: React.ReactNode;
     homeBanner?: React.ReactNode;
+    carousel?: React.ReactNode;
     bgColor?: string;
 }
 
@@ -51,4 +52,9 @@ export interface RecentPurchaseProps {
     text: string;
     price: float;
     date: string;
+}
+
+export interface AccountsProps {
+    text: string;
+    icon: any;
 }

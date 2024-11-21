@@ -1,12 +1,13 @@
 import BalanceShop from "@/components/BalanceShop";
 import IconButton from "@/components/IconButton";
 import Layout from "@/components/Layout";
+import ShopCarousel from "@/components/ShopCarousel";
 import React from "react";
 import { View } from "react-native";
 
 const Shop = () => {
     return (
-        <Layout>
+        <Layout carousel={<ShopCarousel />}>
             <BalanceShop />
 
             <View className="items- flex w-full flex-row flex-wrap justify-between gap-y-10">
@@ -41,20 +42,21 @@ const Shop = () => {
                     link=""
                 />
                 <IconButton
-                    iconType="Material Icon"
-                    iconName="send-to-mobile"
+                    iconType="Custom Icon Data"
+                    iconName=""
                     text="Send Data"
                     link=""
                 />
                 <IconButton
                     iconType="Material Icon"
-                    iconName="send-to-mobile"
+                    iconName="history"
                     text="Purchase History"
                     link=""
                 />
+
                 <IconButton
                     iconType="Material Icon"
-                    iconName="send-to-mobile"
+                    iconName="attach-money"
                     text="Deals"
                     link=""
                 />
