@@ -1,6 +1,8 @@
-import Logo from "@/assets/icons/account-active.svg";
+import AccountExtra from "@/components/AccountExtra";
 import Accounts from "@/components/Accounts";
+import AccountSummary from "@/components/AccountSummary";
 import Layout from "@/components/Layout";
+import Usage from "@/components/Usage";
 import React from "react";
 import { Text, View } from "react-native";
 
@@ -9,96 +11,39 @@ const Account = () => {
         <Layout>
             <Text className="font-raleway-semibold text-4xl">Manage</Text>
 
-            <View className="w-full flex-1 flex-row justify-between gap-x-4">
-                <Accounts text="Profile" icon="account" />
+            <View className="flex flex-row justify-between gap-x-2">
+                <Accounts text="Profile" icon="account" iconSize={34} />
+                <Accounts text="Mobile" icon="cellphone" />
                 <Accounts text="Broadband" icon="wifi" />
-                <Accounts text="Plan" icon="cellphone" />
                 <Accounts text="Billing" icon="receipt" />
             </View>
 
-            <View className="flex flex-row items-center justify-between rounded-md border-2 border-light-blue px-4 py-6">
-                <View className="gap-y-0.5">
-                    <Text className="mb-2 font-raleway-semibold text-xl">
-                        Mobile Plan
-                    </Text>
-                    <Text className="font-raleway-medium text-sm">
-                        Account <Text className="font-rem-light">2179806</Text>
-                    </Text>
-                    <Text className="font-raleway-medium text-sm">
-                        Apple iPhone <Text className="font-rem-light">12</Text>{" "}
-                        Pro
-                    </Text>
-                    <Text className="font-raleway-medium text-sm">
-                        Pay As You Go
-                    </Text>
-                    <Text className="font-rem-light text-sm">0856581057</Text>
-                </View>
+            <AccountSummary
+                device="phone"
+                accountNumber="2179806"
+                phoneModel="iPhone 12 Pro"
+                plan="Pay As You Go"
+                mobileNumber="0856581057"
+            />
+            <Usage />
+            <AccountExtra
+                type="Roaming"
+                link="/(root)/(tabs)/account"
+                linkText="Check your roaming costs"
+                icon="airplane-ticket"
+            >
+                Check and manage your costs before you go away
+            </AccountExtra>
 
-                <Logo width={80} height={80} />
-            </View>
-
-            <View className="flex flex-row items-center justify-between rounded-md border-2 border-light-blue px-4 py-6">
-                <View className="gap-y-0.5">
-                    <Text className="mb-2 font-raleway-semibold text-xl">
-                        Mobile Plan
-                    </Text>
-                    <Text className="font-raleway-medium text-sm">
-                        Account <Text className="font-rem-light">2179806</Text>
-                    </Text>
-                    <Text className="font-raleway-medium text-sm">
-                        Apple iPhone <Text className="font-rem-light">12</Text>{" "}
-                        Pro
-                    </Text>
-                    <Text className="font-raleway-medium text-sm">
-                        Pay As You Go
-                    </Text>
-                    <Text className="font-rem-light text-sm">0856581057</Text>
-                </View>
-
-                <Logo width={80} height={80} />
-            </View>
-
-            <View className="flex flex-row items-center justify-between rounded-md border-2 border-light-blue px-4 py-6">
-                <View className="gap-y-0.5">
-                    <Text className="mb-2 font-raleway-semibold text-xl">
-                        Mobile Plan
-                    </Text>
-                    <Text className="font-raleway-medium text-sm">
-                        Account <Text className="font-rem-light">2179806</Text>
-                    </Text>
-                    <Text className="font-raleway-medium text-sm">
-                        Apple iPhone <Text className="font-rem-light">12</Text>{" "}
-                        Pro
-                    </Text>
-                    <Text className="font-raleway-medium text-sm">
-                        Pay As You Go
-                    </Text>
-                    <Text className="font-rem-light text-sm">0856581057</Text>
-                </View>
-
-                <Logo width={80} height={80} />
-            </View>
-
-            <View className="flex flex-row items-center justify-between rounded-md border-2 border-light-blue px-4 py-6">
-                <View className="gap-y-0.5">
-                    <Text className="mb-2 font-raleway-semibold text-xl">
-                        Mobile Plan
-                    </Text>
-                    <Text className="font-raleway-medium text-sm">
-                        Account <Text className="font-rem-light">2179806</Text>
-                    </Text>
-                    <Text className="font-raleway-medium text-sm">
-                        Apple iPhone <Text className="font-rem-light">12</Text>{" "}
-                        Pro
-                    </Text>
-                    <Text className="font-raleway-medium text-sm">
-                        Pay As You Go
-                    </Text>
-                    <Text className="font-rem-light text-sm">0856581057</Text>
-                </View>
-
-                <Logo width={80} height={80} />
-            </View>
+            <AccountExtra
+                type="Add Ons"
+                link="/(root)/(tabs)/account"
+                linkText="Take a look"
+                icon="add-to-photos"
+            >
+                Awesome extras to keep your device in tip top condition for
+                longer
+            </AccountExtra>
         </Layout>
     );
 };

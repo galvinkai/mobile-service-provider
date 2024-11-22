@@ -2,7 +2,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import React from "react";
 import { Pressable, Text, View } from "react-native";
-import Status from "./Status";
+import HomeBannerUsage from "./HomeBannerUsage";
 
 const HomeBanner = () => {
     const getTimeOfDay = () => {
@@ -57,15 +57,7 @@ const HomeBanner = () => {
             </View>
 
             <View className="flex w-full flex-row items-center">
-                <Status
-                    iconType="Material Icon"
-                    iconName="local-phone"
-                    label="Minutes"
-                    current={350}
-                    total={500}
-                    unit="Mins"
-                />
-                <Status
+                <HomeBannerUsage
                     iconType="FontAwesome5"
                     iconName="globe"
                     label="Data"
@@ -73,7 +65,16 @@ const HomeBanner = () => {
                     total={5}
                     unit="GB"
                 />
-                <Status
+                <HomeBannerUsage
+                    iconType="Material Icon"
+                    iconName="local-phone"
+                    label="Minutes"
+                    current={350}
+                    total={500}
+                    unit="Mins"
+                />
+
+                <HomeBannerUsage
                     iconType="Material Icon"
                     iconName="message"
                     label="Messages"

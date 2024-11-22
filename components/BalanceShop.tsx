@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 
 const BalanceShop = () => {
     return (
-        <View className="mt-2 flex flex-row items-end justify-between rounded-md bg-blue p-4">
+        <View className="mt-2 flex flex-row items-end justify-between rounded-md bg-blue p-4 shadow-sm shadow-black/5">
             <Text className="font-raleway-bold text-3xl text-white">
                 Your Balance
             </Text>

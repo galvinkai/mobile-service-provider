@@ -6,11 +6,12 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { useSharedValue } from "react-native-reanimated";
 import Carousel, { ICarouselInstance } from "react-native-reanimated-carousel";
 
-const number = ["1", "2", "3"];
-
 const ShopCarousel = () => {
     const ref = React.useRef<ICarouselInstance>(null);
     const scrollOffsetValue = useSharedValue(0);
+
+    const number = ["1", "2", "3"];
+    const iconSize = 32;
     const deviceWidth = Dimensions.get("window").width;
 
     useEffect(() => {
@@ -19,8 +20,6 @@ const ShopCarousel = () => {
         const offsetValue = scrollOffsetValue.value;
         console.log("Initial scroll offset value:", offsetValue);
     }, [scrollOffsetValue]);
-
-    const iconSize = 32;
 
     const renderItem = ({ item }: { item: string }) => (
         <View className="h-full w-full items-center justify-between bg-light-blue py-6">
@@ -62,7 +61,7 @@ const ShopCarousel = () => {
                         }}
                     >
                         <MaterialIcons
-                            className="rounded-full bg-gray-200/75 p-1"
+                            className="rounded-full bg-gray-200/50 p-1 shadow-sm shadow-black/20"
                             name="keyboard-arrow-left"
                             size={iconSize}
                             color="#E87400"
@@ -74,7 +73,7 @@ const ShopCarousel = () => {
                         }}
                     >
                         <MaterialIcons
-                            className="rounded-full bg-gray-200/75 p-1"
+                            className="rounded-full bg-gray-200/50 p-1 shadow-sm shadow-black/20"
                             name="keyboard-arrow-right"
                             size={iconSize}
                             color="#E87400"

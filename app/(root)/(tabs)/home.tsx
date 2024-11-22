@@ -1,4 +1,4 @@
-import Balance from "@/components/Balance";
+import BalanceHome from "@/components/BalanceHome";
 import HomeBanner from "@/components/HomeBanner";
 import IconButton from "@/components/IconButton";
 import Layout from "@/components/Layout";
@@ -9,9 +9,9 @@ import { Pressable, Text, View } from "react-native";
 const Home = () => {
     return (
         <Layout homeBanner={<HomeBanner />}>
-            <Balance />
+            <BalanceHome />
 
-            <View className="gap-y-8 rounded-md border border-light-blue p-4">
+            <View className="gap-y-8 rounded-md border border-light-blue bg-white p-4 shadow-sm shadow-black/5">
                 <Text className="font-raleway-semibold text-2xl">
                     Quick Menu
                 </Text>
@@ -47,7 +47,7 @@ const Home = () => {
                 </View>
             </View>
 
-            <View className="gap-y-8 rounded-md border border-light-blue px-4 py-5">
+            <View className="gap-y-8 rounded-md border border-light-blue bg-white px-4 py-5 shadow-sm shadow-black/5">
                 <View className="flex flex-row items-center justify-between pr-4">
                     <Text className="font-raleway-semibold text-2xl">
                         Recent Purchases

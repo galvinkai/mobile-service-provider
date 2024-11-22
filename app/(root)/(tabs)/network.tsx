@@ -1,12 +1,13 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import Layout from "@/components/Layout";
+import React from "react";
+import { Text } from "react-native";
 
 const Network = () => {
-  return (
-    <View>
-      <Text>Network</Text>
-    </View>
-  )
-}
+    return (
+        <Layout>
+            <Text>Network</Text>
+        </Layout>
+    );
+};
 
-export default Network
+export default Network;

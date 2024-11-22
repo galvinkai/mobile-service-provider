@@ -28,7 +28,7 @@ export interface InputFieldProps extends TextInputProps {
     placeholder: string;
 }
 
-export interface StatusProps {
+export interface UsageProps {
     iconType: any;
     iconName: any;
     total: number;
@@ -56,5 +56,22 @@ export interface RecentPurchaseProps {
 
 export interface AccountsProps {
     text: string;
+    icon: any;
+    iconSize?: number;
+}
+
+export interface AccountSummaryProps {
+    device: string;
+    accountNumber: string;
+    phoneModel: string;
+    plan: string;
+    mobileNumber: string;
+}
+
+export interface AccountExtraProps {
+    type: string;
+    children: string;
+    link: RelativePathString;
+    linkText: string;
     icon: any;
 }

@@ -10,16 +10,16 @@ const Shop = () => {
         <Layout carousel={<ShopCarousel />}>
             <BalanceShop />
 
-            <View className="items- flex w-full flex-row flex-wrap justify-between gap-y-10">
+            <View className="flex w-full flex-row flex-wrap justify-between gap-y-10">
                 <IconButton
-                    iconType="FontAwesome5"
+                    iconType="Font Awesome 5"
                     iconName="globe"
                     text="Buy Data"
                     link=""
                 />
                 <IconButton
-                    iconType="Material Icon"
-                    iconName="send-to-mobile"
+                    iconType="Font Awesome 6"
+                    iconName="money-bills"
                     text="Buy Airtime"
                     link=""
                 />
