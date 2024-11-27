@@ -19,10 +19,7 @@ const AccountExtra = ({
             </View>
 
             <Text className="font-raleway-medium">{children}</Text>
-            <Link
-                className="font-raleway-semibold text-blue underline underline-offset-8"
-                href={link}
-            >
+            <Link className="font-raleway-semibold text-blue" href={link}>
                 {linkText}
             </Link>
         </View>

@@ -44,8 +44,11 @@ export interface QuickActionsProps {
 export interface IconProps {
     iconType: any;
     iconName: any;
+    iconSize?: number;
+    padding?: string;
     text: string;
     link: RelativePathString;
+    width?: string;
 }
 
 export interface RecentPurchaseProps {
@@ -74,4 +77,20 @@ export interface AccountExtraProps {
     link: RelativePathString;
     linkText: string;
     icon: any;
+}
+
+export interface NetworkOptionsProps {
+    children: string;
+}
+
+export interface UsageChartProps {
+    data: any;
+    title: string;
+    link: RelativePathString;
+    colour: string;
+}
+
+export interface SettingsOptionProps {
+    children: string;
+    link: RelativePathString;
 }

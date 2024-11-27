@@ -1,6 +1,6 @@
 import AccountExtra from "@/components/AccountExtra";
-import Accounts from "@/components/Accounts";
 import AccountSummary from "@/components/AccountSummary";
+import IconButton from "@/components/IconButton";
 import Layout from "@/components/Layout";
 import Usage from "@/components/Usage";
 import React from "react";
@@ -11,11 +11,35 @@ const Account = () => {
         <Layout>
             <Text className="font-raleway-semibold text-4xl">Manage</Text>
 
-            <View className="flex flex-row justify-between gap-x-2">
-                <Accounts text="Profile" icon="account" iconSize={34} />
-                <Accounts text="Mobile" icon="cellphone" />
-                <Accounts text="Broadband" icon="wifi" />
-                <Accounts text="Billing" icon="receipt" />
+            <View className="flex flex-row justify-between">
+                <IconButton
+                    iconType="Material Community Icon"
+                    iconName="account"
+                    iconSize={29}
+                    text="Profile"
+                    link=""
+                />
+                <IconButton
+                    iconType="Material Community Icon"
+                    iconName="cellphone"
+                    iconSize={29}
+                    text="Mobile"
+                    link=""
+                />
+                <IconButton
+                    iconType="Material Community Icon"
+                    iconName="wifi"
+                    iconSize={29}
+                    text="Broadband"
+                    link=""
+                />
+                <IconButton
+                    iconType="Material Community Icon"
+                    iconName="receipt"
+                    iconSize={29}
+                    text="Billing"
+                    link=""
+                />
             </View>
 
             <AccountSummary

@@ -7,9 +7,32 @@ import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import React from "react";
 import { Pressable, Text, View } from "react-native";
 
-const IconButton = ({ iconType, iconName, text, link }: IconProps) => {
-    const iconSize = 30;
-    const iconColor = "#E87400";
+const IconButton = ({
+    iconType,
+    iconName,
+    text,
+    link,
+    iconSize = 30,
+    padding,
+    width,
+}: IconProps) => {
+    const iconColor = "#fff";
+
+    const setWidth = () => {
+        return width;
+    };
+
+    const getPadding = () => {
+        if (padding) {
+            return padding;
+        } else {
+            return "p-4";
+        }
+    };
+
+    const setBackgroundColour = (colour = "bg-orange") => {
+        return colour;
+    };
 
     const getIcon = (
         iconType: IconProps["iconType"],
@@ -54,17 +77,26 @@ const IconButton = ({ iconType, iconName, text, link }: IconProps) => {
                 return <SendData width={iconSize} height={iconSize} />;
             default:
                 return (
-                    <MaterialIcons name="error" size={iconSize} color="red" />
+                    setBackgroundColour("bg-red-400"),
+                    (
+                        <MaterialIcons
+                            name="error"
+                            size={iconSize}
+                            color="white"
+                        />
+                    )
                 );
         }
     };
 
     return (
         <Pressable
-            className="w-1/4 items-center gap-y-2"
+            className={`items-center gap-y-2 ${setWidth()} `}
             onPress={() => console.log("Pressed:", text)}
         >
-            <View className="items-center rounded-lg border border-light-blue bg-white p-4 shadow-sm shadow-black/10">
+            <View
+                className={`items-center rounded-full shadow-sm shadow-black/10 ${getPadding()} ${setBackgroundColour()}`}
+            >
                 {getIcon(iconType, iconName)}
             </View>
             <Text className="text-center font-raleway-medium text-sm">
