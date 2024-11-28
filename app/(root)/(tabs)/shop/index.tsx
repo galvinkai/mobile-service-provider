@@ -61,7 +61,7 @@ const Shop = () => {
                     iconType="Material Icon"
                     iconName="history"
                     text="Purchase History"
-                    link=""
+                    link="/shop/purchaseHistory"
                     width="w-1/4"
                 />
 

@@ -3,7 +3,7 @@ import React from "react";
 import { ScrollView, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const Layout = ({ children, homeBanner, bgColor,carousel }: LayoutProps) => {
+const Layout = ({ children, homeBanner, bgColor, carousel }: LayoutProps) => {
     return (
         <SafeAreaView
             className="h-full w-full flex-1"
@@ -18,7 +18,7 @@ const Layout = ({ children, homeBanner, bgColor,carousel }: LayoutProps) => {
             >
                 <View>{homeBanner && homeBanner}</View>
                 <View>{carousel && carousel}</View>
-                <View className="gap-y-8 px-6 py-6">{children}</View>
+                <View className="gap-y-8 p-6">{children}</View>
             </ScrollView>
         </SafeAreaView>
     );

@@ -22,22 +22,13 @@ const Layout = () => {
                     fontWeight: 600,
                     fontSize: 12,
                 },
-                headerShown: true,
-                headerStyle: {
-                    backgroundColor: "#295791",
-                    height: 85,
-                },
-                headerTitleStyle: {
-                    fontFamily: "Raleway",
-                    fontWeight: 500,
-                    fontSize: 16,
-                },
-                headerTintColor: "#fff",
+                headerShown: false,
             }}
         >
             <Tabs.Screen
                 name="home"
                 options={{
+                    headerShown: true,
                     headerTitle: "",
                     title: "Home",
                     headerStyle: {

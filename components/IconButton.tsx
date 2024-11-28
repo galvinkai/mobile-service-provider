@@ -4,6 +4,7 @@ import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { router } from "expo-router";
 import React from "react";
 import { Pressable, Text, View } from "react-native";
 
@@ -15,6 +16,7 @@ const IconButton = ({
     iconSize = 30,
     padding,
     width,
+    isDisabled,
 }: IconProps) => {
     const iconColor = "#fff";
 
@@ -92,16 +94,20 @@ const IconButton = ({
     return (
         <Pressable
             className={`items-center gap-y-2 ${setWidth()} `}
-            onPress={() => console.log("Pressed:", text)}
+            onPress={() => router.push(link)}
+            disabled={isDisabled}
         >
             <View
                 className={`items-center rounded-full shadow-sm shadow-black/10 ${getPadding()} ${setBackgroundColour()}`}
             >
                 {getIcon(iconType, iconName)}
             </View>
-            <Text className="text-center font-raleway-medium text-sm">
-                {text}
-            </Text>
+
+            {text && (
+                <Text className="text-center font-raleway-medium text-sm">
+                    {text}
+                </Text>
+            )}
         </Pressable>
     );
 };

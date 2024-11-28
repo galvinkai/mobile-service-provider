@@ -3,8 +3,9 @@ import HomeBanner from "@/components/HomeBanner";
 import IconButton from "@/components/IconButton";
 import Layout from "@/components/Layout";
 import RecentPurchase from "@/components/RecentPurchase";
+import { Link } from "expo-router";
 import React from "react";
-import { Pressable, Text, View } from "react-native";
+import { Text, View } from "react-native";
 
 const Home = () => {
     return (
@@ -52,20 +53,28 @@ const Home = () => {
                     <Text className="font-raleway-semibold text-2xl">
                         Recent Purchases
                     </Text>
-                    <Pressable>
-                        <Text className="font-raleway-semibold text-blue">
-                            View All
-                        </Text>
-                    </Pressable>
+
+                    <Link
+                        href="/(root)/(tabs)/shop/purchaseHistory"
+                        className="font-raleway-semibold text-blue"
+                    >
+                        View All
+                    </Link>
                 </View>
                 <View className="flex flex-row">
                     <RecentPurchase
-                        text="airtime"
+                        text="Airtime"
+                        type="airtime"
                         price={75}
                         date="13 Dec 2024"
                     />
 
-                    <RecentPurchase text="data" price={58} date="13 Dec 2024" />
+                    <RecentPurchase
+                        text="Data"
+                        type="data"
+                        price={58}
+                        date="13 Dec 2024"
+                    />
                 </View>
             </View>
         </Layout>

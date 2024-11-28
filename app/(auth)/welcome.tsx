@@ -15,7 +15,7 @@ const Welcome = () => {
             </View>
 
             <Button
-                text="Sign in with Mobile Number"
+                text="Log in with Mobile Number"
                 colour="orange"
                 icon={
                     <View>
@@ -37,7 +37,7 @@ const Welcome = () => {
                 link="/(auth)/loginMobile"
             />
             <Button
-                text="Sign in with Email"
+                text="Log in with Email"
                 colour="blue"
                 icon={<MaterialIcons name="email" size={24} color="white" />}
                 link="/(auth)/loginEmail"
@@ -51,7 +51,7 @@ const Welcome = () => {
                 <View className="h-0.5 w-full bg-light-blue" />
             </View>
             <Button
-                text="Sign in with Google"
+                text="Log in with Google"
                 textColour="black"
                 border="gray-300"
                 colour="white"
@@ -64,7 +64,7 @@ const Welcome = () => {
                 }
             />
             <Button
-                text="Sign in with Apple"
+                text="Log in with Apple"
                 textColour="black"
                 border="gray-300"
                 colour="white"
@@ -76,7 +76,7 @@ const Welcome = () => {
                     />
                 }
             />
-            <Link href="/register">
+            <Link href="/registerOptions">
                 <View className="flex w-full flex-row items-center justify-center gap-x-2">
                     <Text className="font-raleway-medium text-lg">
                         Don't have an account ?

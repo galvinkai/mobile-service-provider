@@ -5,8 +5,8 @@ import PurchaseAirtime from "../assets/icons/purchase-airtime.svg";
 import PurchaseData from "../assets/icons/purchase-data.svg";
 import PurchasePackage from "../assets/icons/purchase-package.svg";
 
-const RecentPurchase = ({ text, date, price, type }: RecentPurchaseProps) => {
-    const iconSize = 60;
+const PurchaseHistory = ({ text, date, price, type }: RecentPurchaseProps) => {
+    const iconSize = 80;
 
     const getIcon = (type: RecentPurchaseProps["type"]) => {
         switch (type) {
@@ -21,7 +21,7 @@ const RecentPurchase = ({ text, date, price, type }: RecentPurchaseProps) => {
         }
     };
     return (
-        <View className="flex-1 flex-row items-center">
+        <View className="w-full flex-1 flex-row items-center rounded-md border border-light-blue p-4">
             {getIcon(type)}
             <View>
                 <Text className="font-raleway-semibold text-lg capitalize">
@@ -38,4 +38,4 @@ const RecentPurchase = ({ text, date, price, type }: RecentPurchaseProps) => {
     );
 };
 
-export default RecentPurchase;
+export default PurchaseHistory;

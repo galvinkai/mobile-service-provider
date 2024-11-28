@@ -3,18 +3,17 @@ import InputField from "@/components/InputField";
 import LayoutAuth from "@/components/LayoutAuth";
 import React from "react";
 
-const LoginMobile = () => {
+const RegisterMobileNumber = () => {
     return (
         <LayoutAuth>
             <InputField
                 label="Mobile Number"
-                placeholder="e.g 085123456"
-                textContentType="telephoneNumber"
+                placeholder="e.g 0856581057"
                 keyboardType="phone-pad"
             />
-            <Button text="Next" colour="orange" link="/(auth)/loginOTP" />
+            <Button text="Next" colour="orange" link="/(auth)/register" />
         </LayoutAuth>
     );
 };
 
-export default LoginMobile;
+export default RegisterMobileNumber;

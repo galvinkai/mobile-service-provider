@@ -43,18 +43,20 @@ export interface QuickActionsProps {
 
 export interface IconProps {
     iconType: any;
-    iconName: any;
+    iconName?: any;
     iconSize?: number;
     padding?: string;
-    text: string;
-    link: RelativePathString;
+    text?: string;
+    link?: RelativePathString;
     width?: string;
+    isDisabled?: boolean;
 }
 
 export interface RecentPurchaseProps {
     text: string;
     price: float;
     date: string;
+    type: string;
 }
 
 export interface AccountsProps {
