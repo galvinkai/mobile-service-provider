@@ -150,7 +150,7 @@ const purchaseHistory = () => {
         type: string;
     }) => {
         return (
-            <View className="px-6">
+            <View className="px-4">
                 <View className="mb-4 w-full flex-1 flex-row items-center justify-between rounded-md border border-light-blue px-4 py-4">
                     <View className="flex flex-row items-center gap-x-2">
                         <IconButton
