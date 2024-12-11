@@ -21,7 +21,7 @@ const PurchaseHistory = ({ text, date, price, type }: RecentPurchaseProps) => {
         }
     };
     return (
-        <View className="w-full flex-1 flex-row items-center rounded-md border border-light-blue p-4">
+        <View className="border-light-blue-custom w-full flex-1 flex-row items-center rounded-md border p-4">
             {getIcon(type)}
             <View>
                 <Text className="font-raleway-semibold text-lg capitalize">

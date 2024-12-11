@@ -18,6 +18,7 @@ const AccountLayout = () => {
             }}
         >
             <Stack.Screen name="index" options={{ headerTitle: "Account" }} />
+            <Stack.Screen name="profile" options={{ headerTitle: "Profile" }} />
         </Stack>
     );
 };

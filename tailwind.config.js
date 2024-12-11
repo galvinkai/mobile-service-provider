@@ -1,15 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     // NOTE: Update this to include the paths to all of your component files.
-    content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
+    content: [
+        "./app/**/*.{js,jsx,ts,tsx}",
+        "./components/**/*.{js,jsx,ts,tsx}",
+    ],
     presets: [require("nativewind/preset")],
     theme: {
         extend: {
             colors: {
-                blue: "#295791",
-                "light-blue": "#AEC0D5",
-                orange: "#E87400",
-                green: "#14AE5C",
+                "blue-custom": "#295791",
+                "light-blue-custom": "#AEC0D5",
+                "orange-custom": "#E87400",
+                "green-custom": "#14AE5C",
             },
             fontFamily: {
                 raleway: ["Raleway-Regular", "sans-serif"],

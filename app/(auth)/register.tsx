@@ -22,7 +22,11 @@ const Register = () => {
                 textContentType="password"
                 secureTextEntry={true}
             />
-            <Button text="Sign Up" colour="orange" link="/(root)/(tabs)/home" />
+            <Button
+                text="Sign Up"
+                colour="orange-custom"
+                link="/(root)/(tabs)/home"
+            />
         </LayoutAuth>
     );
 };

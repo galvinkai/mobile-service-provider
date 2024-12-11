@@ -12,7 +12,11 @@ const LoginMobile = () => {
                 textContentType="telephoneNumber"
                 keyboardType="phone-pad"
             />
-            <Button text="Next" colour="orange" link="/(auth)/loginOTP" />
+            <Button
+                text="Next"
+                colour="orange-custom"
+                link="/(auth)/loginOTP"
+            />
         </LayoutAuth>
     );
 };

@@ -10,7 +10,7 @@ const InputField = ({ label, placeholder, ...props }: InputFieldProps) => {
         >
             <Text className="text-sm text-gray-500">{label}</Text>
             <TextInput
-                className="w-full rounded-md border border-light-blue px-4 py-3"
+                className="border-light-blue-custom w-full rounded-md border px-4 py-3"
                 placeholder={placeholder}
                 placeholderTextColor={"#B0B0B0"}
                 {...props}

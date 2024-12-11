@@ -32,7 +32,7 @@ const ShopCarousel = () => {
     }, [scrollOffsetValue]);
 
     const renderItem = ({ item }: { item: string }) => (
-        <View className="h-full w-full flex-1 items-center justify-between gap-y-4 border-b-2 border-light-blue pb-6">
+        <View className="border-light-blue-custom h-full w-full flex-1 items-center justify-between gap-y-4 border-b-2 pb-6">
             <Image
                 source={imageMap[item]}
                 style={{ width: deviceWidth, flex: 1 }}
@@ -44,7 +44,7 @@ const ShopCarousel = () => {
 
             <Link
                 href="/(root)/(tabs)/shop"
-                className="rounded-full bg-orange px-8 py-3 font-raleway-medium text-white"
+                className="bg-orange-custom rounded-full px-8 py-3 font-raleway-medium text-white"
             >
                 View Deal
             </Link>

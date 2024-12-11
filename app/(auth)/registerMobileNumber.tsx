@@ -11,7 +11,11 @@ const RegisterMobileNumber = () => {
                 placeholder="e.g 0856581057"
                 keyboardType="phone-pad"
             />
-            <Button text="Next" colour="orange" link="/(auth)/register" />
+            <Button
+                text="Next"
+                colour="orange-custom"
+                link="/(auth)/register"
+            />
         </LayoutAuth>
     );
 };

@@ -1,4 +1,5 @@
 import Logo from "@/assets/icons/account-active.svg";
+import Google from "@/assets/icons/google.svg";
 import Button from "@/components/Button";
 import LayoutAuth from "@/components/LayoutAuth";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
@@ -16,7 +17,7 @@ const Welcome = () => {
 
             <Button
                 text="Log in with Mobile Number"
-                colour="orange"
+                colour="orange-custom"
                 icon={
                     <View>
                         {Platform.OS === "ios" ? (
@@ -38,35 +39,30 @@ const Welcome = () => {
             />
             <Button
                 text="Log in with Email"
-                colour="blue"
+                colour="blue-custom"
                 icon={<MaterialIcons name="email" size={24} color="white" />}
                 link="/(auth)/loginEmail"
             />
 
             <View className="flex w-full flex-row items-center justify-center gap-x-4 px-28">
-                <View className="h-0.5 w-full bg-light-blue" />
+                <View className="bg-light-blue-custom h-0.5 w-full" />
                 <Text className="text-center font-raleway-medium text-lg uppercase">
                     or
                 </Text>
-                <View className="h-0.5 w-full bg-light-blue" />
+                <View className="bg-light-blue-custom h-0.5 w-full" />
             </View>
             <Button
                 text="Log in with Google"
                 textColour="black"
-                border="gray-300"
+                border="gray"
                 colour="white"
-                icon={
-                    <MaterialCommunityIcons
-                        name="google"
-                        size={24}
-                        color="black"
-                    />
-                }
+                icon={<Google width={22} height={22} />}
+                link="/(root)/(tabs)/home"
             />
             <Button
                 text="Log in with Apple"
                 textColour="black"
-                border="gray-300"
+                border="gray"
                 colour="white"
                 icon={
                     <MaterialCommunityIcons
@@ -75,13 +71,14 @@ const Welcome = () => {
                         color="black"
                     />
                 }
+                link="/(root)/(tabs)/home"
             />
             <Link href="/registerOptions">
                 <View className="flex w-full flex-row items-center justify-center gap-x-2">
                     <Text className="font-raleway-medium text-lg">
                         Don't have an account ?
                     </Text>
-                    <Text className="font-raleway-bold text-lg text-orange">
+                    <Text className="text-orange-custom font-raleway-bold text-lg">
                         Sign up
                     </Text>
                 </View>

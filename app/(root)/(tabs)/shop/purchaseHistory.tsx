@@ -151,7 +151,7 @@ const purchaseHistory = () => {
     }) => {
         return (
             <View className="px-4">
-                <View className="mb-4 w-full flex-1 flex-row items-center justify-between rounded-md border border-light-blue px-4 py-4">
+                <View className="border-light-blue-custom mb-4 w-full flex-1 flex-row items-center justify-between rounded-md border px-4 py-4">
                     <View className="flex flex-row items-center gap-x-2">
                         <IconButton
                             iconType="Font Awesome 5"
@@ -176,7 +176,7 @@ const purchaseHistory = () => {
 
     const dateSectionHeader = (header: string) => {
         return (
-            <Text className="mb-4 border-y border-blue bg-gray-50 px-6 py-4 font-raleway-medium text-lg">
+            <Text className="border-blue-custom mb-4 border-y bg-gray-50 px-6 py-4 font-raleway-medium text-lg">
                 {header}
             </Text>
         );

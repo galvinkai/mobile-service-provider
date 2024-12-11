@@ -5,7 +5,7 @@ import { Pressable, Text, View } from "react-native";
 
 const BalanceHome = () => {
     return (
-        <View className="mt-2 flex flex-row items-center justify-between rounded-md bg-blue p-4 shadow-sm shadow-black/5">
+        <View className="bg-blue-custom mt-2 flex flex-row items-center justify-between rounded-md p-4 shadow-sm shadow-black/5">
             <View>
                 <Text className="font-raleway-semibold text-2xl text-white">
                     Your Balance
@@ -19,7 +19,7 @@ const BalanceHome = () => {
                     onPress={() => {
                         router.navigate("/(root)/(tabs)/shop");
                     }}
-                    className="flex-row items-center gap-x-4 rounded-xl bg-orange px-6 py-1.5"
+                    className="bg-orange-custom flex-row items-center gap-x-4 rounded-xl px-6 py-1.5"
                 >
                     <FontAwesome6 name="money-bills" size={16} color="white" />
 

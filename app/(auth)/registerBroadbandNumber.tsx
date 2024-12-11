@@ -11,7 +11,7 @@ const RegisterBroadbandNumber = () => {
                 placeholder="e.g 08012345678"
                 keyboardType="phone-pad"
             />
-            <Button text="Next" colour="blue" link="/(auth)/register" />
+            <Button text="Next" colour="blue-custom" link="/(auth)/register" />
         </LayoutAuth>
     );
 };

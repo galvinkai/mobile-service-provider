@@ -15,10 +15,10 @@ const Button = ({
 }: ButtonProps) => {
     const buttonColor = (colour: ButtonProps["colour"]) => {
         switch (colour) {
-            case "orange":
-                return "bg-orange";
-            case "blue":
-                return "bg-blue";
+            case "orange-custom":
+                return "bg-orange-custom";
+            case "blue-custom":
+                return "bg-blue-custom";
             default:
                 return "bg-white";
         }
@@ -26,7 +26,7 @@ const Button = ({
 
     const buttonBorder = (border: ButtonProps["border"]) => {
         if (border) {
-            return `border border-${border}`;
+            return `border border-${border}-400`;
         }
     };
 

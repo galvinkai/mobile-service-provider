@@ -19,7 +19,7 @@ const HomeBanner = () => {
 
     const greeting = getTimeOfDay();
     return (
-        <View className="gap-y-8 border-t-0 bg-blue px-4 pb-8 pt-4">
+        <View className="bg-blue-custom gap-y-8 border-t-0 px-4 pb-8 pt-4">
             <View className="flex flex-row items-start justify-between">
                 <View className="flex flex-row items-center gap-x-1">
                     <Ionicons name="person-circle" size={60} color="white" />
@@ -28,7 +28,7 @@ const HomeBanner = () => {
                             085681057
                         </Text>
                         <Text className="font-raleway- text-lg text-white">
-                            {greeting}, Galvin
+                            {greeting}, Panduleni
                         </Text>
                     </View>
                 </View>
@@ -52,7 +52,7 @@ const HomeBanner = () => {
                     Current Plan
                 </Text>
                 <Text className="font-raleway-bolditalic text-4xl text-white">
-                    Pay As You Go
+                    Jiva Streaming Boost
                 </Text>
             </View>
 

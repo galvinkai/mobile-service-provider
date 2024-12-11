@@ -32,7 +32,7 @@ const IconButton = ({
         }
     };
 
-    const setBackgroundColour = (colour = "bg-orange") => {
+    const setBackgroundColour = (colour = "bg-orange-custom") => {
         return colour;
     };
 
@@ -94,7 +94,7 @@ const IconButton = ({
     return (
         <Pressable
             className={`items-center gap-y-2 ${setWidth()} `}
-            onPress={() => router.push(link)}
+            onPress={() => router.navigate(link)}
             disabled={isDisabled}
         >
             <View

@@ -12,14 +12,17 @@ const AccountExtra = ({
     icon,
 }: AccountExtraProps) => {
     return (
-        <View className="gap-y-2 rounded-md border border-light-blue bg-white px-4 py-4 shadow-sm shadow-black/5">
+        <View className="border-light-blue-custom gap-y-2 rounded-md border bg-white px-4 py-4 shadow-sm shadow-black/5">
             <View className="flex flex-row items-center gap-x-2">
                 <MaterialIcons name={icon} size={22} color="#E87400" />
                 <Text className="font-raleway-bold text-lg">{type}</Text>
             </View>
 
             <Text className="font-raleway-medium">{children}</Text>
-            <Link className="font-raleway-semibold text-blue" href={link}>
+            <Link
+                className="text-blue-custom font-raleway-semibold"
+                href={link}
+            >
                 {linkText}
             </Link>
         </View>

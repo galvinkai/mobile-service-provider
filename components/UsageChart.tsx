@@ -12,7 +12,7 @@ const UsageChart = ({ data, title, link, colour }: UsageChartProps) => {
             <View className="flex w-full flex-row items-center justify-between">
                 <Text className="font-raleway-semibold text-xl">{title}</Text>
                 <Link
-                    className="font-raleway-semibold text-sm text-blue"
+                    className="text-blue-custom font-raleway-semibold text-sm"
                     href={link}
                 >
                     View details

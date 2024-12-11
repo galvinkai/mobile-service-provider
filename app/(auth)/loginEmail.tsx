@@ -18,7 +18,11 @@ const LoginEmail = () => {
                 textContentType="password"
                 secureTextEntry={true}
             />
-            <Button text="Log in" colour="blue" link="/(root)/(tabs)/home" />
+            <Button
+                text="Log in"
+                colour="blue-custom"
+                link="/(root)/(tabs)/home"
+            />
         </LayoutAuth>
     );
 };

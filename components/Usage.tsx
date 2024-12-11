@@ -4,7 +4,7 @@ import AccountUsage from "./AccountUsage";
 
 const Usage = () => {
     return (
-        <View className="gap-y-8 rounded-md border border-light-blue bg-white px-4 py-4 shadow-sm shadow-black/5">
+        <View className="border-light-blue-custom gap-y-8 rounded-md border bg-white px-4 py-4 shadow-sm shadow-black/5">
             <AccountUsage
                 iconType="FontAwesome5"
                 iconName="globe"

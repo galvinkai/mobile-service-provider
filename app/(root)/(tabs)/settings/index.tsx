@@ -20,7 +20,7 @@ const Settings = () => {
                 <SettingsOption link="">Privacy Policy</SettingsOption>
                 <SettingsOption link="">Terms and Conditions</SettingsOption>
                 <Link
-                    className="w-full py-4 text-center font-raleway-semibold text-xl text-blue"
+                    className="text-blue-custom w-full py-4 text-center font-raleway-semibold text-xl"
                     href="/(auth)/welcome"
                 >
                     Log Out

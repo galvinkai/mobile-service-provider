@@ -5,7 +5,7 @@ import { Text, View } from "react-native";
 
 const NetworkOptions = ({ children }: NetworkOptionsProps) => {
     return (
-        <View className="flex flex-row items-center justify-between rounded-lg border border-light-blue px-4 py-2">
+        <View className="border-light-blue-custom flex flex-row items-center justify-between rounded-lg border px-4 py-2">
             <Text className="font-raleway-medium">{children}</Text>
             <MaterialIcons
                 name="keyboard-arrow-right"

@@ -26,7 +26,7 @@ const AccountSummary = ({
     };
 
     return (
-        <View className="flex flex-row items-center justify-between rounded-md border border-light-blue bg-white px-4 py-4 shadow-sm shadow-black/5">
+        <View className="border-light-blue-custom flex flex-row items-center justify-between rounded-md border bg-white px-4 py-4 shadow-sm shadow-black/5">
             <View className="gap-y-1">
                 <Text className="mb-2 font-raleway-bold text-xl">
                     {getDeviceType(device)} Plan

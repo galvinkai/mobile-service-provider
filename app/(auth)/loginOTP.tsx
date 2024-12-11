@@ -8,14 +8,18 @@ const LoginOTP = () => {
     return (
         <LayoutAuth>
             <InputField label="OTP" placeholder="e.g 12345" />
-            <Button text="Log in" colour="orange" link="/(root)/(tabs)/home" />
+            <Button
+                text="Log in"
+                colour="orange-custom"
+                link="/(root)/(tabs)/home"
+            />
 
             <View className="flex w-full flex-row items-center justify-center">
                 <Text className="font-raleway-medium text-lg">
                     Didn't receive OTP?{" "}
                 </Text>
                 <Pressable>
-                    <Text className="font-raleway-semibold text-lg text-blue">
+                    <Text className="text-blue-custom font-raleway-semibold text-lg">
                         Send Code
                     </Text>
                 </Pressable>

@@ -6,7 +6,7 @@ import { View } from "react-native";
 
 const SettingsOption = ({ children, link }: SettingsOptionProps) => {
     return (
-        <View className="flex w-full flex-row items-center justify-between rounded-lg border-b border-light-blue pb-4 ">
+        <View className="border-light-blue-custom flex w-full flex-row items-center justify-between rounded-lg border-b pb-4">
             <Link href={link} className="font-raleway-medium">
                 {children}
             </Link>

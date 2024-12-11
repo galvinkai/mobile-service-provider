@@ -17,7 +17,7 @@ const Account = () => {
                     iconName="account"
                     iconSize={29}
                     text="Profile"
-                    link=""
+                    link="/account/profile"
                 />
                 <IconButton
                     iconType="Material Community Icon"

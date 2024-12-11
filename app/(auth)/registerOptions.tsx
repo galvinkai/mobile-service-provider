@@ -11,12 +11,12 @@ const RegisterOptions = () => {
             </Text>
             <Button
                 text="I'm a Mobile Customer"
-                colour="orange"
+                colour="orange-custom"
                 link="/registerMobileNumber"
             />
             <Button
                 text="I'm a Broadband Customer"
-                colour="blue"
+                colour="blue-custom"
                 link="/registerBroadbandNumber"
             />
         </LayoutAuth>

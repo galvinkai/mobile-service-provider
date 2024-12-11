@@ -10,9 +10,9 @@ const NetworkStatus = () => {
     };
     return (
         <View>
-            <View className="flex flex-row items-center justify-between overflow-hidden rounded-lg border-y border-r border-light-blue pr-4">
+            <View className="border-light-blue-custom flex flex-row items-center justify-between overflow-hidden rounded-lg border-y border-r pr-4">
                 <View className="flex flex-row items-center gap-x-4">
-                    <View className="rounded-l-lg bg-green p-5">
+                    <View className="bg-green-custom rounded-l-lg p-5">
                         <MaterialIcons
                             name="network-wifi"
                             size={64}
@@ -26,7 +26,7 @@ const NetworkStatus = () => {
                             </Text>
                             <Link
                                 href="/(root)/(tabs)/network"
-                                className="font-raleway-medium text-sm text-blue"
+                                className="text-blue-custom font-raleway-medium text-sm"
                             >
                                 Still having trouble?
                             </Link>

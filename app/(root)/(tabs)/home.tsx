@@ -12,7 +12,7 @@ const Home = () => {
         <Layout homeBanner={<HomeBanner />}>
             <BalanceHome />
 
-            <View className="gap-y-8 rounded-md border border-light-blue bg-white p-4 shadow-sm shadow-black/5">
+            <View className="border-light-blue-custom gap-y-8 rounded-md border bg-white p-4 shadow-sm shadow-black/5">
                 <Text className="font-raleway-semibold text-2xl">
                     Quick Menu
                 </Text>
@@ -48,7 +48,7 @@ const Home = () => {
                 </View>
             </View>
 
-            <View className="gap-y-8 rounded-md border border-light-blue bg-white px-4 py-5 shadow-sm shadow-black/5">
+            <View className="border-light-blue-custom gap-y-8 rounded-md border bg-white px-4 py-5 shadow-sm shadow-black/5">
                 <View className="flex flex-row items-center justify-between pr-4">
                     <Text className="font-raleway-semibold text-2xl">
                         Recent Purchases
@@ -56,7 +56,7 @@ const Home = () => {
 
                     <Link
                         href="/(root)/(tabs)/shop/purchaseHistory"
-                        className="font-raleway-semibold text-blue"
+                        className="text-blue-custom font-raleway-semibold"
                     >
                         View All
                     </Link>
