@@ -1,11 +1,12 @@
+import Layout from "@/components/Layout";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
 
 const broadband = () => {
   return (
-    <View>
+    <Layout>
       <Text>broadband</Text>
-    </View>
+    </Layout>
   );
 };
 

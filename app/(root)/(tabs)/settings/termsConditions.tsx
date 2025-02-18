@@ -1,11 +1,12 @@
+import Layout from "@/components/Layout";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
 
 const termsConditions = () => {
   return (
-    <View>
+    <Layout>
       <Text>termsConditions</Text>
-    </View>
+    </Layout>
   );
 };
 

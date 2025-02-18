@@ -1,11 +1,12 @@
+import Layout from "@/components/Layout";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
 
 const send = () => {
   return (
-    <View>
+    <Layout>
       <Text>send</Text>
-    </View>
+    </Layout>
   );
 };
 

@@ -2,12 +2,12 @@ import Layout from "@/components/Layout";
 import React from "react";
 import { Text } from "react-native";
 
-const buy = () => {
+const parentalControls = () => {
   return (
     <Layout>
-      <Text>buy</Text>
+      <Text>parentalControls</Text>
     </Layout>
   );
 };
 
-export default buy;
+export default parentalControls;
